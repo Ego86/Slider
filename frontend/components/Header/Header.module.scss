@@ -1,0 +1,35 @@
+.header {
+    @apply flex justify-between px-16 pt-28 mb-9;
+
+    h1 {
+        // font-family: ;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 60px;
+        text-align: left;
+
+    }
+}
+
+.btnCont {
+
+    >button {
+        @apply w-[50px] h-[50px] rounded-full mr-3;
+        border: solid 1px #222527;
+        transition: background .3s ease;
+
+        &:hover {
+            @apply text-white;
+            border: none;
+            background-color: #2495FE;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+            &:hover {
+                color: #222527;
+                background-color: #fff;
+                border: solid 1px #222527;
+            }
+        }
+    }
+}
